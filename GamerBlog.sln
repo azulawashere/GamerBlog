@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.WinUI", "Project.Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.BLL", "Project.BLL\Project.BLL.csproj", "{901DD272-B257-4C1E-8DAF-CB6F191C2802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proje.ENTITIES", "Proje.ENTITIES\Proje.ENTITIES.csproj", "{29693173-A4CA-4BD8-9E8D-D99CB5E2545D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project.ENTITIES", "Proje.ENTITIES\Project.ENTITIES.csproj", "{29693173-A4CA-4BD8-9E8D-D99CB5E2545D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
