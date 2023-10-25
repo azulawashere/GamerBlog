@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proje.ENTITIES.Models
+namespace Project.ENTITIES.Models
 {
     internal class BaseEntity
     {
-
     }
 }
