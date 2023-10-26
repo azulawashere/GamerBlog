@@ -45,7 +45,11 @@
     <Compile Include="Models\AppUser.cs" />
     <Compile Include="Models\AppUserProfile.cs" />
     <Compile Include="Models\BaseEntity.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Disslike.cs" />
+    <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\GameCategory.cs" />
     <Compile Include="Models\Like.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
