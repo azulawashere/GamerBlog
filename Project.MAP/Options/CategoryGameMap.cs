@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Project.MAP.Options
 {
-    public class GameCategoryMap:BaseMap<GameCategory>
+    public class CategoryGameMap:BaseMap<CategoryGame>
     {
-        public GameCategoryMap()
+        public CategoryGameMap()
         {
            
             //İlişki Ayarlamaları

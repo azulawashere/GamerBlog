@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITES.Models
 {
-    public class GameCategory: BaseEntity
+    public class CategoryGame: BaseEntity
     {
-        public Game GameID { get; set; }
-        public Category CategoryID{ get; set; }
+        public int  GameID { get; set; }
+        public int CategoryID{ get; set; }
 
         //Relational Properties
 

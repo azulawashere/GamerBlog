@@ -8,7 +8,7 @@ namespace Project.ENTITES.Models
 {
     public class Disslike:BaseEntity
     {
-        public int Number { get; set; }
+       
         public int AppUserID { get; set; }
 
         // Relational Properties
