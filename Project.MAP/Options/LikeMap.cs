@@ -11,7 +11,7 @@ namespace Project.MAP.Options
     {
         public LikeMap()
         {
-            Property(x => x.Number).HasColumnName("Sayi").IsRequired();
+          
         }
     }
 }

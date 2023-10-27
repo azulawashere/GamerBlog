@@ -11,7 +11,7 @@ namespace Project.MAP.Options
     {
         public CategoryMap()
         {
-            Property(x=>x.Description).HasColumnName("Aciklama").IsRequired();
+         
             Property(x=>x.CategoryName).HasColumnName("CategoriAdi").IsRequired();
         }
     }
