@@ -11,7 +11,8 @@ namespace Project.ENTITES.Models
        
         public int AppUserID { get; set; }
 
-        // Relational Properties
+
+        // Relational Propertiess
 
         public virtual AppUser AppUser { get; set; }
 
