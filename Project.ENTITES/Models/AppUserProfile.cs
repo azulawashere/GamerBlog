@@ -11,21 +11,12 @@ namespace Project.ENTITES.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public string Email { get; set; }
+        public DateTime BirthDate { get; set; } 
 
-
-        
         // Relational Properties
 
-        
-
         public virtual AppUser AppUser { get; set; }
-
-       
-        
-
-
-
-
 
     }
 }

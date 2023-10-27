@@ -16,5 +16,7 @@ namespace Project.ENTITES.Models
 
         public virtual  AppUserProfile Profile { get; set; }
         public virtual List<Comment> Comments { get; set; }
+        public virtual List<Like> Likes { get; set; }
+        public virtual List<Disslike> Disslikes { get; set; }
     }
 }

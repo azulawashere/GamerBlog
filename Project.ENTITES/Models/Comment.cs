@@ -8,14 +8,15 @@ namespace Project.ENTITES.Models
 {
     public class Comment:BaseEntity
     {
-        public string UserName { get; set; }
+        public string Description { get; set; }
         public int AppUserID { get; set; }
-        
+        public string Title { get; set; }
+        public List<Comment> Comments { get; set; }
         //Relational Properties
-
-        public virtual Game game { get; set; }
-        public  virtual Like Like{ get; set; }
-        public virtual Disslike Disslike { get; set; }
+        public virtual Game Game { get; set; }    
+        public  virtual List<Like> Likes{ get; set; }
+        public virtual List<Disslike> Disslikes { get; set; }
+      
 
     }
 }
