@@ -14,7 +14,7 @@ namespace Project.ENTITES.Models
         //Relational Properties
 
         public virtual Game Game{ get; set; }
-        public virtual Comment comment { get; set; }
+        public virtual Category Category  { get; set; }
 
 
     }

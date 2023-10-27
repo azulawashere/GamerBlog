@@ -10,6 +10,7 @@ namespace Project.ENTITES.Models
     {
         public string UserName { get; set; }
         public int AppUserID { get; set; }
+        
         //Relational Properties
 
         public virtual Game game { get; set; }

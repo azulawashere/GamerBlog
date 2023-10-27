@@ -13,9 +13,10 @@ namespace Project.ENTITES.Models
         public int Number { get; set; }
         public int AppUserID { get; set; }
 
-        // rerwersd
+        //Relational Properties
 
         public virtual AppUser AppUser { get; set; }
 
+    
     }
 }

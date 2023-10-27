@@ -14,7 +14,7 @@ namespace Project.ENTITES.Models
         //Relational Properties
         public virtual List<Category>Categories { get; set; }
         public virtual List<Comment> Comments { get; set; }
-        public virtual Like like { get; set; }
+        public virtual Like Like { get; set; }
         public virtual Disslike Disslike { get; set; }
 
     }
