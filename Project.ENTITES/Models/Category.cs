@@ -12,7 +12,7 @@ namespace Project.ENTITES.Models
 
 
         //Relational Properties
-        public virtual  List<Game>Games { get; set; }
+        public virtual  List<Game> Games { get; set; }
 
     }
 }

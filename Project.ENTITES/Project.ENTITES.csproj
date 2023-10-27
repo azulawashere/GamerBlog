@@ -49,7 +49,6 @@
     <Compile Include="Models\Comment.cs" />
     <Compile Include="Models\Disslike.cs" />
     <Compile Include="Models\Game.cs" />
-    <Compile Include="Models\CategoryGame.cs" />
     <Compile Include="Models\Like.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

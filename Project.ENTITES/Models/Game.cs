@@ -10,10 +10,11 @@ namespace Project.ENTITES.Models
     {
         public string  Name { get; set; }
         public string Description { get; set; }
+        public int CategoryID { get; set; }
 
         //Relational Properties
-        public virtual List<Category>Categories { get; set; }
-        public virtual List<Comment> Comments { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual List<Comment>  Comments { get; set; }
         
 
     }

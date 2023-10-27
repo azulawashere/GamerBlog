@@ -23,7 +23,7 @@ namespace Project.DAL.ContextClasses
             modelBuilder.Configurations.Add(new CategoryMap());
             modelBuilder.Configurations.Add(new CommentMap());
             modelBuilder.Configurations.Add(new DisslikeMap());
-            modelBuilder.Configurations.Add(new CategoryGameMap());
+            
             modelBuilder.Configurations.Add(new GameMap());
             modelBuilder.Configurations.Add(new LikeMap());
 
@@ -34,7 +34,7 @@ namespace Project.DAL.ContextClasses
         public DbSet<Category> Categories { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Disslike> Disslikes { get; set; }
-        public DbSet<CategoryGame> CategoryGames { get; set; }
+       
         public DbSet<Like> Likes { get; set; }
         public DbSet<Game> Games { get; set; }
     }
