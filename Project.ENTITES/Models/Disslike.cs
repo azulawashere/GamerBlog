@@ -6,25 +6,14 @@ using System.Threading.Tasks;
 
 namespace Project.ENTITES.Models
 {
-    public class AppUserProfile:BaseEntity
+    public class Disslike:BaseEntity
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public int Number { get; set; }
+        public int AppUserID { get; set; }
 
-
-
-        
         // Relational Properties
 
-        
-
         public virtual AppUser AppUser { get; set; }
-
-       
-        
-
-
-
 
 
     }
