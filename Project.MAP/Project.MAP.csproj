@@ -54,7 +54,11 @@
     <Compile Include="Options\AppUserMap.cs" />
     <Compile Include="Options\AppUserProfileMap.cs" />
     <Compile Include="Options\BaseMap.cs" />
+    <Compile Include="Options\CategoryMap.cs" />
     <Compile Include="Options\CommentMap.cs" />
+    <Compile Include="Options\DisslikeMap.cs" />
+    <Compile Include="Options\GameCategoryMap.cs" />
+    <Compile Include="Options\GameMap.cs" />
     <Compile Include="Options\LikeMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
