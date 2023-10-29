@@ -100,7 +100,7 @@
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtKullaniciAdi);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Giris Yap";
             this.ResumeLayout(false);
             this.PerformLayout();
 
