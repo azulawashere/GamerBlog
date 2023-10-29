@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project.DAL.ContextClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,13 +16,13 @@ namespace Project.WinUI
         public Form1()
         {
             InitializeComponent();
+           
         }
-       
+        MyContext _db;
         private void lblKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             KayitOl kyt = new KayitOl();
             kyt.Show();
-            
             this.Hide();
         }
 
