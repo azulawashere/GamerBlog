@@ -114,7 +114,7 @@
             this.dtpDogumTarihi.Location = new System.Drawing.Point(147, 291);
             this.dtpDogumTarihi.Name = "dtpDogumTarihi";
             this.dtpDogumTarihi.Size = new System.Drawing.Size(196, 22);
-            this.dtpDogumTarihi.TabIndex = 1;
+            this.dtpDogumTarihi.TabIndex = 6;
             this.dtpDogumTarihi.Value = new System.DateTime(2023, 10, 29, 22, 4, 42, 0);
             // 
             // txtIsim
@@ -122,21 +122,21 @@
             this.txtIsim.Location = new System.Drawing.Point(147, 36);
             this.txtIsim.Name = "txtIsim";
             this.txtIsim.Size = new System.Drawing.Size(126, 22);
-            this.txtIsim.TabIndex = 2;
+            this.txtIsim.TabIndex = 0;
             // 
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(147, 251);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(126, 22);
-            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabIndex = 5;
             // 
             // txtSoyisim
             // 
             this.txtSoyisim.Location = new System.Drawing.Point(147, 78);
             this.txtSoyisim.Name = "txtSoyisim";
             this.txtSoyisim.Size = new System.Drawing.Size(126, 22);
-            this.txtSoyisim.TabIndex = 2;
+            this.txtSoyisim.TabIndex = 1;
             // 
             // txtKullaniciAdi
             // 
@@ -150,21 +150,21 @@
             this.txtSifre.Location = new System.Drawing.Point(147, 163);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(126, 22);
-            this.txtSifre.TabIndex = 2;
+            this.txtSifre.TabIndex = 3;
             // 
             // txtSifreTekrar
             // 
             this.txtSifreTekrar.Location = new System.Drawing.Point(147, 209);
             this.txtSifreTekrar.Name = "txtSifreTekrar";
             this.txtSifreTekrar.Size = new System.Drawing.Size(126, 22);
-            this.txtSifreTekrar.TabIndex = 2;
+            this.txtSifreTekrar.TabIndex = 4;
             // 
             // btnUyeOl
             // 
             this.btnUyeOl.Location = new System.Drawing.Point(147, 340);
             this.btnUyeOl.Name = "btnUyeOl";
             this.btnUyeOl.Size = new System.Drawing.Size(108, 32);
-            this.btnUyeOl.TabIndex = 3;
+            this.btnUyeOl.TabIndex = 7;
             this.btnUyeOl.Text = "Üye Ol";
             this.btnUyeOl.UseVisualStyleBackColor = true;
             this.btnUyeOl.Click += new System.EventHandler(this.btnUyeOL_Click);
@@ -174,7 +174,7 @@
             this.btnGirisYap.Location = new System.Drawing.Point(147, 378);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(109, 41);
-            this.btnGirisYap.TabIndex = 4;
+            this.btnGirisYap.TabIndex = 8;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);

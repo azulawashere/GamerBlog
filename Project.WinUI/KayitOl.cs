@@ -19,7 +19,7 @@ namespace Project.WinUI
         public KayitOl()
         {
             InitializeComponent();
-            
+           
         }       
         private void btnUyeOL_Click(object sender, EventArgs e)
         {
@@ -28,35 +28,42 @@ namespace Project.WinUI
                 MessageBox.Show("Şifreler uyuşmuyor", "TAKE(1)GameBlog");
                 return;
             }
-            AppUserProfile ap = new AppUserProfile()
-            { 
-               FirstName = txtIsim.Text.ToLower(),
-               LastName = txtSoyisim.Text.ToLower(),
-               BirthDate = dtpDogumTarihi.Value,
-               Email = txtEmail.Text.ToLower()
-            };
-            
+            if (txtIsim.Text !=string.Empty && txtSoyisim.Text !=string.Empty && txtKullaniciAdi.Text!=string.Empty && txtSifre.Text!=string.Empty && txtEmail.Text!=string.Empty && txtSifre.Text.Length<=8)// kullanıcının bilgilerini bos bırakmamasını ve sifrenin en az 8 karakter icermesini sagladık...
+            {
+                AppUserProfile ap = new AppUserProfile()
+                {
+                    FirstName = txtIsim.Text.ToLower(), // kullanıcı değerlerini atadık...
+                    LastName = txtSoyisim.Text.ToLower(),
+                    BirthDate = dtpDogumTarihi.Value,
+                    Email = txtEmail.Text.ToLower()
+                };
+                AppUser au = new AppUser()
+                {
+                    UserName = txtKullaniciAdi.Text.ToLower(),
+                    Password = txtSifre.Text,//Sifrede Tolower metodlu degil guvenlik amaclı(buyuk kucuk harf)..
+                    Profile = ap
+                };
+                try
+                {
+                    AppUsersRepository aur = new AppUsersRepository();
+                    aur.Add(au);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                MessageBox.Show("Kayıt Başarılı");
+            }
+            else
+            {
+                MessageBox.Show("Lütfen boşluk bırakmayınız");
+                
+            }          
 
-            AppUser au = new AppUser()
-            {
-                UserName = txtKullaniciAdi.Text.ToLower(),
-                Password = txtSifre.Text.ToLower(),
-                Profile = ap
-            };
-            try
-            {
-                AppUsersRepository aur = new AppUsersRepository();
-                aur.Add(au);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            MessageBox.Show("Kayıt Başarılı");
         }
         private void btnGirisYap_Click(object sender, EventArgs e)
         {        
-            Form1 g = new Form1();
+            Form1 g = new Form1(); //Basildiginda form1 formuna gecis yapsın ve kendini kapatsın...
             g.Show();
             this.Hide();
         }
