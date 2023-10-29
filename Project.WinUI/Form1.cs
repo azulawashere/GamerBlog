@@ -43,8 +43,8 @@ namespace Project.WinUI
                     {
 
                         MessageBox.Show("Giriş Başarili");
-                        BlogPanel logPanel = new BlogPanel();
-                        logPanel.Show();
+                        MainPage mp = new MainPage();
+                        mp.Show();
                         Hide();
                     }
                     else MessageBox.Show("Girdiğiniz Bilgileri kontrol ediniz.");

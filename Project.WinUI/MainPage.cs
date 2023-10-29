@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Project.WinUI
 {
-    public partial class BlogPanel : Form
+    public partial class MainPage : Form
     {
-        public BlogPanel()
+        public MainPage()
         {
             InitializeComponent();
         }
