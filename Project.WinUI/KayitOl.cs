@@ -29,7 +29,7 @@ namespace Project.WinUI
                 return;
             }
             AppUserProfile ap = new AppUserProfile()
-            {
+            { 
                FirstName = txtIsim.Text.ToLower(),
                LastName = txtSoyisim.Text.ToLower(),
                BirthDate = dtpDogumTarihi.Value,
