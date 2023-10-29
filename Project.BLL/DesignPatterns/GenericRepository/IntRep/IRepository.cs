@@ -17,7 +17,7 @@ namespace Project.BLL.DesignPatterns.GenericRepository.IntRep
         List<T> GetModifieds();
         List <T> GetDeleteds();
 
-        void add(T item);
+        void Add(T item);
         void AddRange (List<T> list);
         void Delete (T item);
         void DeleteRange(List<T> list);

@@ -35,7 +35,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpDogumTarihi = new System.Windows.Forms.DateTimePicker();
             this.txtIsim = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSoyisim = new System.Windows.Forms.TextBox();
@@ -108,13 +108,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Doğum Tarihi:";
             // 
-            // dateTimePicker1
+            // dtpDogumTarihi
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(147, 291);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(196, 22);
-            this.dateTimePicker1.TabIndex = 1;
-            this.dateTimePicker1.Value = new System.DateTime(2023, 10, 29, 22, 4, 42, 0);
+            this.dtpDogumTarihi.Location = new System.Drawing.Point(147, 291);
+            this.dtpDogumTarihi.Name = "dtpDogumTarihi";
+            this.dtpDogumTarihi.Size = new System.Drawing.Size(196, 22);
+            this.dtpDogumTarihi.TabIndex = 1;
+            this.dtpDogumTarihi.Value = new System.DateTime(2023, 10, 29, 22, 4, 42, 0);
             // 
             // txtIsim
             // 
@@ -166,6 +166,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Üye Ol";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // KayitOl
             // 
@@ -179,7 +180,7 @@
             this.Controls.Add(this.txtSoyisim);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtIsim);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpDogumTarihi);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -203,7 +204,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpDogumTarihi;
         private System.Windows.Forms.TextBox txtIsim;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSoyisim;
