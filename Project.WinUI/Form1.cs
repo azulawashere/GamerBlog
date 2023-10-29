@@ -16,5 +16,10 @@ namespace Project.WinUI
         {
             InitializeComponent();
         }
+
+        private void lblKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
