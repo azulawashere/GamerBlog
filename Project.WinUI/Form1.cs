@@ -23,7 +23,7 @@ namespace Project.WinUI
         
         private void lblKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            KayitOl kyt = new KayitOl();
+            KayitOl kyt = new KayitOl(); // KayitOl paneline gitmek için bir nesne yaratıyoruz
             kyt.Show();
             Hide();
 
@@ -31,19 +31,19 @@ namespace Project.WinUI
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            try
+            try // program çökmesin diye giriş yapma işlemlerini trycathe aldık
             {
-                if (txtKullaniciAdi.Text != null && txtSifre.Text != null)
+                if (txtKullaniciAdi.Text != null && txtSifre.Text != null) // giriş yapma textboxları null geçilmemesi için kontrol
                 {
-                    AppUsersRepository app = new AppUsersRepository();
-                    AppUser user = app.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text);
+                    AppUsersRepository app = new AppUsersRepository(); // veritabanına erişen metotlara erişmek için.
+                    AppUser user = app.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text); //kutulardaki verilere uyan bir kullanıcı var ise dbize kullanıcıyı döncek yok ise null döncek sorgu
 
 
-                    if (user != null) 
+                    if (user != null) // eğer bide firsordefault metodundan null değer dönmezse alttaki kodlar çalışsın
                     {
 
                         MessageBox.Show("Giriş Başarili");
-                        MainPage mp = new MainPage();
+                        MainPage mp = new MainPage(); // blog paneline gitmek için bir nesne yaratıyoruz
                         mp.Show();
                         Hide();
                     }
