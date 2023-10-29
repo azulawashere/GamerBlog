@@ -90,6 +90,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KayitOl.resx">
+      <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -115,9 +118,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Project.DAL\Project.DAL.csproj">
-      <Project>{40de986d-f5a4-4e27-b46a-8218b98ec861}</Project>
-      <Name>Project.DAL</Name>
+    <ProjectReference Include="..\Project.BLL\Project.BLL.csproj">
+      <Project>{901dd272-b257-4c1e-8daf-cb6f191c2802}</Project>
+      <Name>Project.BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Project.ENTITES\Project.ENTITES.csproj">
       <Project>{2a66b018-591f-4044-b895-f8272f133640}</Project>
