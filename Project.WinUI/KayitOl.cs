@@ -20,11 +20,8 @@ namespace Project.WinUI
         {
             InitializeComponent();
             
-        }
-
-        
-
-        private void button1_Click(object sender, EventArgs e)
+        }       
+        private void btnUyeOL_Click(object sender, EventArgs e)
         {
             if (txtSifre.Text != txtSifreTekrar.Text)
             {
@@ -43,7 +40,6 @@ namespace Project.WinUI
                 Password = txtSifre.Text,
                 Profile = ap
             };
-
             try
             {
                 AppUsersRepository aur = new AppUsersRepository();
@@ -52,13 +48,14 @@ namespace Project.WinUI
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-
             }
             MessageBox.Show("Kayıt Başarılı");
-
-
-
-
+        }
+        private void btnGirisYap_Click(object sender, EventArgs e)
+        {        
+            Form1 g = new Form1();
+            g.Show();
+            this.Hide();
         }
     }
 }

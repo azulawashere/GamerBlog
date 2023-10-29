@@ -42,7 +42,8 @@
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.txtSifreTekrar = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnUyeOl = new System.Windows.Forms.Button();
+            this.btnGirisYap = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbl
@@ -158,22 +159,33 @@
             this.txtSifreTekrar.Size = new System.Drawing.Size(126, 22);
             this.txtSifreTekrar.TabIndex = 2;
             // 
-            // button1
+            // btnUyeOl
             // 
-            this.button1.Location = new System.Drawing.Point(147, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 32);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Üye Ol";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnUyeOl.Location = new System.Drawing.Point(147, 340);
+            this.btnUyeOl.Name = "btnUyeOl";
+            this.btnUyeOl.Size = new System.Drawing.Size(108, 32);
+            this.btnUyeOl.TabIndex = 3;
+            this.btnUyeOl.Text = "Üye Ol";
+            this.btnUyeOl.UseVisualStyleBackColor = true;
+            this.btnUyeOl.Click += new System.EventHandler(this.btnUyeOL_Click);
+            // 
+            // btnGirisYap
+            // 
+            this.btnGirisYap.Location = new System.Drawing.Point(147, 378);
+            this.btnGirisYap.Name = "btnGirisYap";
+            this.btnGirisYap.Size = new System.Drawing.Size(109, 41);
+            this.btnGirisYap.TabIndex = 4;
+            this.btnGirisYap.Text = "Giriş Yap";
+            this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // KayitOl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 423);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnGirisYap);
+            this.Controls.Add(this.btnUyeOl);
             this.Controls.Add(this.txtSifreTekrar);
             this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtKullaniciAdi);
@@ -211,6 +223,7 @@
         private System.Windows.Forms.TextBox txtKullaniciAdi;
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.TextBox txtSifreTekrar;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnUyeOl;
+        private System.Windows.Forms.Button btnGirisYap;
     }
 }
