@@ -25,23 +25,35 @@ namespace Project.WinUI
         {
             KayitOl kyt = new KayitOl();
             kyt.Show();
-            this.Hide();
+            Hide();
 
         }
 
         private void btnGiris_Click(object sender, EventArgs e)
         {
-            AppUsersRepository app= new AppUsersRepository();
-            AppUser user= app.FirstOrDefault(x => x.UserName==txtKullaniciAdi.Text && x.Password==txtSifre.Text);
-            if(user != null )
+            try
             {
-                MessageBox.Show("Giriş Başarili");
-            }
-            else
-            {
-                MessageBox.Show("Girdiğiniz Bilgileri kontrol ediniz.");
-            }
+                if (txtKullaniciAdi.Text != null && txtSifre.Text != null)
+                {
+                    AppUsersRepository app = new AppUsersRepository();
+                    AppUser user = app.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text && x.Password == txtSifre.Text);
 
+
+                    if (user != null) 
+                    {
+
+                        MessageBox.Show("Giriş Başarili");
+                        BlogPanel logPanel = new BlogPanel();
+                        logPanel.Show();
+                        Hide();
+                    }
+                    else MessageBox.Show("Girdiğiniz Bilgileri kontrol ediniz.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
