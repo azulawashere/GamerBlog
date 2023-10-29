@@ -48,7 +48,7 @@
             this.txtSifre.Location = new System.Drawing.Point(86, 56);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.Size = new System.Drawing.Size(121, 20);
-            this.txtSifre.TabIndex = 0;
+            this.txtSifre.TabIndex = 1;
             // 
             // label1
             // 
