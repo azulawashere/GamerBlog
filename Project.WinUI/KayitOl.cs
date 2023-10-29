@@ -27,17 +27,20 @@ namespace Project.WinUI
             {
                 MessageBox.Show("Şifreler uyuşmuyor", "TAKE(1)GameBlog");
                 return;
-            }                                
-            AppUserProfile ap = new AppUserProfile();
-            ap.FirstName = txtIsim.Text;
-            ap.LastName = txtSoyisim.Text;
-            ap.BirthDate = dtpDogumTarihi.Value;
-            ap.Email = txtEmail.Text;
+            }
+            AppUserProfile ap = new AppUserProfile()
+            {
+               FirstName = txtIsim.Text.ToLower(),
+               LastName = txtSoyisim.Text.ToLower(),
+               BirthDate = dtpDogumTarihi.Value,
+               Email = txtEmail.Text.ToLower()
+            };
+            
 
             AppUser au = new AppUser()
             {
-                UserName = txtKullaniciAdi.Text,
-                Password = txtSifre.Text,
+                UserName = txtKullaniciAdi.Text.ToLower(),
+                Password = txtSifre.Text.ToLower(),
                 Profile = ap
             };
             try
