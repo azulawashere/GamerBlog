@@ -50,6 +50,7 @@
     <Compile Include="Models\Disslike.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Like.cs" />
+    <Compile Include="Models\Sifre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
