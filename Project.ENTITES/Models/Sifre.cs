@@ -20,7 +20,7 @@ namespace Sifreleme_odev.Models
         //---------------------------
         // Şifrelenmiş = 11-99-412-42-3135-5335-22;
 
-        public string SifreCoz(string s)
+        private string SifreCoz(string s)
         {
             
             string a = null ,b=null;
