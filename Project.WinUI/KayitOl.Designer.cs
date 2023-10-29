@@ -40,7 +40,7 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSoyisim = new System.Windows.Forms.TextBox();
             this.txtKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.txtSifreOlustur = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.txtSifreTekrar = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // lbl
             // 
             this.lbl.AutoSize = true;
-            this.lbl.Location = new System.Drawing.Point(57, 163);
+            this.lbl.Location = new System.Drawing.Point(59, 120);
             this.lbl.Name = "lbl";
             this.lbl.Size = new System.Drawing.Size(82, 16);
             this.lbl.TabIndex = 0;
@@ -57,16 +57,16 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 206);
+            this.label2.Location = new System.Drawing.Point(99, 166);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 16);
+            this.label2.Size = new System.Drawing.Size(37, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Şifre Oluştur:";
+            this.label2.Text = "Şifre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 254);
+            this.label3.Location = new System.Drawing.Point(56, 209);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 16);
             this.label3.TabIndex = 0;
@@ -75,7 +75,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(85, 120);
+            this.label4.Location = new System.Drawing.Point(85, 254);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 0;
@@ -125,7 +125,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(147, 117);
+            this.txtEmail.Location = new System.Drawing.Point(147, 251);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(126, 22);
             this.txtEmail.TabIndex = 2;
@@ -139,21 +139,21 @@
             // 
             // txtKullaniciAdi
             // 
-            this.txtKullaniciAdi.Location = new System.Drawing.Point(147, 163);
+            this.txtKullaniciAdi.Location = new System.Drawing.Point(147, 120);
             this.txtKullaniciAdi.Name = "txtKullaniciAdi";
             this.txtKullaniciAdi.Size = new System.Drawing.Size(126, 22);
             this.txtKullaniciAdi.TabIndex = 2;
             // 
-            // txtSifreOlustur
+            // txtSifre
             // 
-            this.txtSifreOlustur.Location = new System.Drawing.Point(147, 206);
-            this.txtSifreOlustur.Name = "txtSifreOlustur";
-            this.txtSifreOlustur.Size = new System.Drawing.Size(126, 22);
-            this.txtSifreOlustur.TabIndex = 2;
+            this.txtSifre.Location = new System.Drawing.Point(147, 163);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(126, 22);
+            this.txtSifre.TabIndex = 2;
             // 
             // txtSifreTekrar
             // 
-            this.txtSifreTekrar.Location = new System.Drawing.Point(147, 254);
+            this.txtSifreTekrar.Location = new System.Drawing.Point(147, 209);
             this.txtSifreTekrar.Name = "txtSifreTekrar";
             this.txtSifreTekrar.Size = new System.Drawing.Size(126, 22);
             this.txtSifreTekrar.TabIndex = 2;
@@ -174,7 +174,7 @@
             this.ClientSize = new System.Drawing.Size(404, 423);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtSifreTekrar);
-            this.Controls.Add(this.txtSifreOlustur);
+            this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.txtKullaniciAdi);
             this.Controls.Add(this.txtSoyisim);
             this.Controls.Add(this.txtEmail);
@@ -208,7 +208,7 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSoyisim;
         private System.Windows.Forms.TextBox txtKullaniciAdi;
-        private System.Windows.Forms.TextBox txtSifreOlustur;
+        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.TextBox txtSifreTekrar;
         private System.Windows.Forms.Button button1;
     }
