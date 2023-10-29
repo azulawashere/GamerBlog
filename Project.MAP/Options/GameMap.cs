@@ -9,5 +9,10 @@ namespace Project.MAP.Options
 {
     public class GameMap:BaseMap<Game>
     {
+        public GameMap()
+        {
+            Property(x => x.Name).HasColumnName("Ad").IsRequired();
+            Property(x => x.Description).HasColumnName("Aciklama").IsRequired();
+        }
     }
 }

@@ -11,9 +11,10 @@ namespace Project.MAP.Options
     {
         public AppUserProfileMap()
         {
-            Property(x => x.FirstName).HasColumnName("Adi").IsRequired();
-            Property(x => x.LastName).HasColumnName("Soyadi").IsRequired();
-      
+            Property(x => x.FirstName).HasColumnName("Ad").IsRequired();
+            Property(x => x.LastName).HasColumnName("Soyad").IsRequired();
+            Property(x => x.Email).HasColumnName("Mail").IsRequired();
+            Property(x => x.BirthDate).HasColumnName("DogumTarih").IsRequired();
         }
     }
 }

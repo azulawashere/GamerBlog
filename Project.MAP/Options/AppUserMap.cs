@@ -12,9 +12,9 @@ namespace Project.MAP.Options
         public AppUserMap()
         {
             ToTable("Kullanicilar");
-            Property(x => x.UserName).HasColumnName("Kullanici Ismi").IsRequired();
+            Property(x => x.UserName).HasColumnName("Kullanici Adi").IsRequired();
             Property(x => x.Password).HasColumnName("Sifre").IsRequired();
-
+            Property(x => x.Admin).HasColumnName("Yetkili").IsRequired();
             //Relational Options
             HasOptional(x => x.Profile).WithRequired(x => x.AppUser); //one to one Relation
         }
