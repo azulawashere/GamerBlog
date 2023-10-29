@@ -16,8 +16,16 @@ namespace Project.WinUI
         {
             InitializeComponent();
         }
-
+       
         private void lblKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KayitOl kyt = new KayitOl();
+            kyt.Show();
+            
+            this.Hide();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
         {
 
         }
