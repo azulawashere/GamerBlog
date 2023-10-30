@@ -26,7 +26,7 @@ namespace Project.WinUI
             _gameRepository = new GameRepository();
             _appUserRepository = new AppUsersRepository();
             _categoryRepository = new CategoryRepository();
-            lstUyeler.Items.Add(_appUserRepository.GetAll());
+            
             cmbKategoriler.DataSource = _categoryRepository.GetAll();
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();
             
@@ -35,7 +35,7 @@ namespace Project.WinUI
 
         private void btnOyunEkle_Click(object sender, EventArgs e)
         {
-            if (txtOyunIsmi.Text != string.Empty && cmbKategoriler.SelectedIndex<-1)
+            if (txtOyunIsmi.Text != string.Empty && cmbKategoriler.SelectedIndex>-1)
             {
                 Game g = new Game()
                 {
@@ -61,6 +61,7 @@ namespace Project.WinUI
                     CategoryName = txtKategoriEkle.Text
                 };
                 _categoryRepository.Add(c);
+                cmbKategoriler.DataSource = _categoryRepository.GetAll();
                 MessageBox.Show("Ekleme işlemi başarılı","TAKE(1)GameBlog");
             }
             else
