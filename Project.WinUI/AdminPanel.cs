@@ -85,7 +85,8 @@ namespace Project.WinUI
         {
             if (cmbKullanicilar.SelectedIndex>-1)
             {
-                lstYorumlar.Items.Add(_commentRepository.GetAll());
+                lstYorumlar.DataSource=(cmbKullanicilar.SelectedItem as AppUser).Comments;
+              
                 if (lstYorumlar.SelectedIndex>-1)
                 {
                     _commentRepository.Delete(lstYorumlar.SelectedItem as Comment);
