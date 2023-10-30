@@ -15,11 +15,11 @@ namespace Project.WinUI
 {
     public partial class Form1 : Form
     {
-        AppUsersRepository app = new AppUsersRepository();
+        AppUsersRepository _appUserRepository;
         public Form1()
         {
             InitializeComponent();
-            
+            _appUserRepository = new AppUsersRepository();
         }
         
         private void lblKayitOl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -36,8 +36,8 @@ namespace Project.WinUI
             {
                 if (txtKullaniciAdi.Text != string.Empty && txtSifre.Text != string.Empty && txtKullaniciAdi.Text.Length>7) // giriş yapma textboxları null geçilmemesi için kontrol
                 {
-                    AppUsersRepository app = new AppUsersRepository(); // veritabanına erişen metotlara erişmek için.
-                    AppUser user = app.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text.ToLower() && x.Password == txtSifre.Text); //kutulardaki verilere uyan bir kullanıcı var ise dbize kullanıcıyı döncek yok ise null döncek sorgu. şifre tolower değil güvenlik amaçlı
+                    
+                    AppUser user = _appUserRepository.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text.ToLower() && x.Password == txtSifre.Text); //kutulardaki verilere uyan bir kullanıcı var ise dbize kullanıcıyı döncek yok ise null döncek sorgu. şifre tolower değil güvenlik amaçlı
 
                     if (user != null) // eğer bide firsordefault metodundan null değer dönmezse alttaki kodlar çalışsın
                     {
