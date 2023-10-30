@@ -18,7 +18,7 @@ namespace Project.WinUI
         GameRepository _gameRepository;
         AppUsersRepository _appUserRepository;
         CategoryRepository _categoryRepository;
-        AppUser user;
+        AppUser User;
         public AdminPanel(AppUser user)
         {
             InitializeComponent();
@@ -28,10 +28,10 @@ namespace Project.WinUI
             _categoryRepository = new CategoryRepository();
             lstUyeler.DataSource = _appUserRepository.GetActives();
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
-            cmbKullanicilar.DataSource = _appUserRepository.GetAll();
-            lstYorumlar.DataSource = user.Comments;           
-            this.user = user;
-            
+            cmbKullanicilar.DataSource = _appUserRepository.GetAll();                    
+            User = user;
+            cmbKullanicilar.SelectedIndex = -1;
+
 
         }
 
@@ -104,16 +104,28 @@ namespace Project.WinUI
 
         private void btnAnaSayfa_Click(object sender, EventArgs e)
         {
-            MainPage mg = new MainPage(user); //Basildiginda form1 formuna gecis yapsın ve kendini kapatsın...
+            MainPage mg = new MainPage(User); //Basildiginda form1 formuna gecis yapsın ve kendini kapatsın...
             mg.Show();
             this.Hide();
         }
 
         private void cmbKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+            if (cmbKullanicilar.SelectedIndex > -1)
+            {
+              lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as CommentRepository).Where(x => x.Status != ENTITES.Enums.DataStatus.Deleted && x.AppUser == User);
 
-            lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as AppUser).Comments;
-            lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as AppUsersRepository).GetActives().;
+            }
+            else
+            {
+                MessageBox.Show("Lütfen kullanıcı seç");
+            }
+            
+            
+            
+            
+
         }
     }
 }
