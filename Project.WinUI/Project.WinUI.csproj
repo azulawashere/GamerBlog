@@ -133,6 +133,10 @@
       <Project>{901dd272-b257-4c1e-8daf-cb6f191c2802}</Project>
       <Name>Project.BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Project.Common\Project.Common.csproj">
+      <Project>{7e80bfd3-e718-46fb-97b1-f7c469ee6e84}</Project>
+      <Name>Project.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Project.ENTITES\Project.ENTITES.csproj">
       <Project>{2a66b018-591f-4044-b895-f8272f133640}</Project>
       <Name>Project.ENTITES</Name>
