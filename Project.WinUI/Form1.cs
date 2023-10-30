@@ -46,7 +46,7 @@ namespace Project.WinUI
                         mp.Show();
                         Hide();
                     }
-                    else if(user != null && user.Admin)
+                    else if(user != null && user.Admin==true)
                     {
 
                         MessageBox.Show("Giriş Başarili");

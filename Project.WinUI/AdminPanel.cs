@@ -22,6 +22,7 @@ namespace Project.WinUI
         public AdminPanel(AppUser user)
         {
             InitializeComponent();
+            User = user;
             _commentRepository = new CommentRepository();
             _gameRepository = new GameRepository();
             _appUserRepository = new AppUsersRepository();
@@ -29,8 +30,8 @@ namespace Project.WinUI
             lstUyeler.DataSource = _appUserRepository.GetActives();
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();                    
-            User = user;
-            cmbKullanicilar.SelectedIndex = -1;
+           
+            
 
 
         }
@@ -111,11 +112,15 @@ namespace Project.WinUI
 
         private void cmbKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            List<Comment> list = new List<Comment>();
             if (cmbKullanicilar.SelectedIndex > -1)
             {
-              lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as CommentRepository).Where(x => x.Status != ENTITES.Enums.DataStatus.Deleted && x.AppUser == User);
-
+              foreach( Comment item  in (cmbKullanicilar.SelectedItem as AppUser).Comments)
+                {
+                    if(item.Status!=ENTITES.Enums.DataStatus.Deleted&&item.AppUser==User)
+                    list.Add(item);
+                }
+              lstYorumlar.DataSource= list;
             }
             else
             {
