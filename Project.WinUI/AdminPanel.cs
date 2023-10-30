@@ -26,8 +26,8 @@ namespace Project.WinUI
             _gameRepository = new GameRepository();
             _appUserRepository = new AppUsersRepository();
             _categoryRepository = new CategoryRepository();
-            
-            cmbKategoriler.DataSource = _categoryRepository.GetAll();
+            lstUyeler.DataSource = _appUserRepository.GetActives();
+            cmbKategoriler.DataSource = _categoryRepository.GetAll();           
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();
             
 
@@ -75,6 +75,9 @@ namespace Project.WinUI
             if (lstUyeler.SelectedIndex > -1)
             {
                 _appUserRepository.Delete(lstUyeler.SelectedItem as AppUser);
+                lstUyeler.DataSource = _appUserRepository.GetActives();
+
+
             }
             else
             {
