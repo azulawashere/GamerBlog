@@ -48,11 +48,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnYorumYap = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtYorum = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtYorum = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pctFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -232,21 +232,55 @@
             this.btnYorumYap.TabIndex = 34;
             this.btnYorumYap.Text = "Yorum Yap";
             this.btnYorumYap.UseVisualStyleBackColor = true;
+            this.btnYorumYap.Click += new System.EventHandler(this.btnYorumYap_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtYorum);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.txtTitle);
             this.groupBox1.Controls.Add(this.btnYorumYap);
             this.groupBox1.Location = new System.Drawing.Point(960, 208);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(338, 391);
+            this.groupBox1.Size = new System.Drawing.Size(338, 355);
             this.groupBox1.TabIndex = 35;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Yorum Giriş";
             this.groupBox1.Visible = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 122);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 38;
+            this.label5.Text = "Yorum:";
+            // 
+            // txtYorum
+            // 
+            this.txtYorum.Location = new System.Drawing.Point(12, 148);
+            this.txtYorum.Name = "txtYorum";
+            this.txtYorum.Size = new System.Drawing.Size(326, 149);
+            this.txtYorum.TabIndex = 37;
+            this.txtYorum.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 38);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.TabIndex = 36;
+            this.label4.Text = "Başlık:";
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(50, 38);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(100, 20);
+            this.txtTitle.TabIndex = 35;
             // 
             // button2
             // 
@@ -258,39 +292,6 @@
             this.button2.Text = "Yorum Ekle:";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(59, 56);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 35;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 36;
-            this.label4.Text = "label4";
-            // 
-            // txtYorum
-            // 
-            this.txtYorum.Location = new System.Drawing.Point(6, 223);
-            this.txtYorum.Name = "txtYorum";
-            this.txtYorum.Size = new System.Drawing.Size(326, 96);
-            this.txtYorum.TabIndex = 37;
-            this.txtYorum.Text = "";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 198);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "Yorum:";
             // 
             // MainPage
             // 
@@ -352,7 +353,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.RichTextBox txtYorum;
         private System.Windows.Forms.Label label5;
     }
