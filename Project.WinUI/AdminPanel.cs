@@ -112,15 +112,12 @@ namespace Project.WinUI
 
         private void cmbKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            List<Comment> list = new List<Comment>();
+            
+
             if (cmbKullanicilar.SelectedIndex > -1)
             {
-              foreach( Comment item  in (cmbKullanicilar.SelectedItem as AppUser).Comments)
-                {
-                    if(item.Status!=ENTITES.Enums.DataStatus.Deleted&&item.AppUser==User)
-                    list.Add(item);
-                }
-              lstYorumlar.DataSource= list;
+                _commentRepository.Where(x=>x.Status!=ENTITES.Enums.DataStatus.Deleted&&x.AppUser==cmbKullanicilar.SelectedItem as AppUser);
+
             }
             else
             {
