@@ -10,5 +10,9 @@ namespace Project.BLL.DesignPatterns.GenericRepository.ConcRep
 {
     public class CategoryRepository:BaseRepository<Category>
     {
+        public override string ToString()
+        {    
+            return base.ToString();
+        }
     }
 }
