@@ -15,6 +15,7 @@ namespace Project.WinUI
 {
     public partial class Form1 : Form
     {
+        AppUsersRepository app = new AppUsersRepository();
         public Form1()
         {
             InitializeComponent();
