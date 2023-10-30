@@ -8,7 +8,11 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.DesignPatterns.GenericRepository.ConcRep
 {
-    public class AppUsersRepository:BaseRepository<AppUser>
+    public class AppUsersRepository : BaseRepository<AppUser>
     {
+        public void Delete()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
