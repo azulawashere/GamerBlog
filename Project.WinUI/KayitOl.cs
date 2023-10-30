@@ -15,10 +15,12 @@ namespace Project.WinUI
 {
     public partial class KayitOl : Form
     {
+        AppUsersRepository _appUserRepository;
      
         public KayitOl()
         {
             InitializeComponent();
+            _appUserRepository = new AppUsersRepository();
            
         }       
         private void btnUyeOL_Click(object sender, EventArgs e)
@@ -45,8 +47,7 @@ namespace Project.WinUI
                 };
                 try
                 {
-                    AppUsersRepository aur = new AppUsersRepository();
-                    aur.Add(au);
+                    _appUserRepository.Add(au);
                 }
                 catch (Exception ex)
                 {
