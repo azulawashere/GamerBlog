@@ -19,7 +19,7 @@ namespace Project.WinUI.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -63,9 +63,9 @@ namespace Project.WinUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap takebir {
+        internal static System.Drawing.Bitmap _90cd46ae29323a1f31d55900c3a2436d {
             get {
-                object obj = ResourceManager.GetObject("takebir", resourceCulture);
+                object obj = ResourceManager.GetObject("_90cd46ae29323a1f31d55900c3a2436d", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,39 @@ namespace Project.WinUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap takebir1 {
+        internal static System.Drawing.Bitmap darth_vader_sith_star_wars_dark_wallpaper_preview {
             get {
-                object obj = ResourceManager.GetObject("takebir1", resourceCulture);
+                object obj = ResourceManager.GetObject("darth_vader_sith_star_wars_dark_wallpaper_preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_magnifying_glass_magnifying_glass_material_glass_wine_glass_lens {
+            get {
+                object obj = ResourceManager.GetObject("png_transparent_magnifying_glass_magnifying_glass_material_glass_wine_glass_lens", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ronaldo_nazario_real_madrid_uowrhe3shq301vp41b5ha5ct4 {
+            get {
+                object obj = ResourceManager.GetObject("ronaldo_nazario_real_madrid_uowrhe3shq301vp41b5ha5ct4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap swbfii_credit_ea_2000x1270 {
+            get {
+                object obj = ResourceManager.GetObject("swbfii_credit_ea_2000x1270", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
