@@ -83,6 +83,12 @@
     <Compile Include="KayitOl.Designer.cs">
       <DependentUpon>KayitOl.cs</DependentUpon>
     </Compile>
+    <Compile Include="KullaniciProfili.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciProfili.Designer.cs">
+      <DependentUpon>KullaniciProfili.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="KayitOl.resx">
       <DependentUpon>KayitOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciProfili.resx">
+      <DependentUpon>KullaniciProfili.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>

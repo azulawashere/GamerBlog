@@ -42,7 +42,7 @@ namespace Project.WinUI
                     if (user != null) // eğer bide firsordefault metodundan null değer dönmezse alttaki kodlar çalışsın
                     {
                         MessageBox.Show("Giriş Başarili");
-                        MainPage mp = new MainPage(); // blog paneline gitmek için bir nesne yaratıyoruz
+                        MainPage mp = new MainPage(user); // blog paneline gitmek için bir nesne yaratıyoruz
                         mp.Show();
                         Hide();
                     }
