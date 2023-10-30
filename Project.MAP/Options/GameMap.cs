@@ -12,7 +12,7 @@ namespace Project.MAP.Options
         public GameMap()
         {
             Property(x => x.Name).HasColumnName("Ad").IsRequired();
-            Property(x => x.Description).HasColumnName("Aciklama").IsRequired();
+           
         }
     }
 }
