@@ -116,7 +116,7 @@ namespace Project.WinUI
 
             if (cmbKullanicilar.SelectedIndex > -1)
             {
-                _commentRepository.Where(x=>x.Status!=ENTITES.Enums.DataStatus.Deleted&&x.AppUser==cmbKullanicilar.SelectedItem as AppUser);
+              lstYorumlar.DataSource=  _commentRepository.Where(x=>(x.Status!=ENTITES.Enums.DataStatus.Deleted&&x.AppUserID==User.ID ));
 
             }
             else
