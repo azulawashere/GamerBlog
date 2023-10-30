@@ -44,6 +44,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.cmbKategoriler = new System.Windows.Forms.ComboBox();
             this.btnYorumSil = new System.Windows.Forms.Button();
+            this.btnAnaSayfa = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -120,6 +121,7 @@
             this.cmbKullanicilar.Name = "cmbKullanicilar";
             this.cmbKullanicilar.Size = new System.Drawing.Size(224, 24);
             this.cmbKullanicilar.TabIndex = 5;
+            this.cmbKullanicilar.SelectedIndexChanged += new System.EventHandler(this.cmbKullanicilar_SelectedIndexChanged);
             // 
             // lstYorumlar
             // 
@@ -194,11 +196,22 @@
             this.btnYorumSil.UseVisualStyleBackColor = true;
             this.btnYorumSil.Click += new System.EventHandler(this.btnYorumSil_Click);
             // 
+            // btnAnaSayfa
+            // 
+            this.btnAnaSayfa.Location = new System.Drawing.Point(1105, 489);
+            this.btnAnaSayfa.Name = "btnAnaSayfa";
+            this.btnAnaSayfa.Size = new System.Drawing.Size(115, 46);
+            this.btnAnaSayfa.TabIndex = 15;
+            this.btnAnaSayfa.Text = "Ana Sayfa";
+            this.btnAnaSayfa.UseVisualStyleBackColor = true;
+            this.btnAnaSayfa.Click += new System.EventHandler(this.btnAnaSayfa_Click);
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1223, 536);
+            this.Controls.Add(this.btnAnaSayfa);
             this.Controls.Add(this.btnYorumSil);
             this.Controls.Add(this.cmbKategoriler);
             this.Controls.Add(this.label6);
@@ -240,5 +253,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cmbKategoriler;
         private System.Windows.Forms.Button btnYorumSil;
+        private System.Windows.Forms.Button btnAnaSayfa;
     }
 }

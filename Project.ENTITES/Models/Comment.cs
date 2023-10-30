@@ -12,6 +12,10 @@ namespace Project.ENTITES.Models
         {
             Comments = new List<Comment>();
         }
+        public override string ToString()
+        {
+            return $"Başlık: {Title} Yorum=>{Description}";
+        }
         public string Description { get; set; }
         public int AppUserID { get; set; }
         public string Title { get; set; }

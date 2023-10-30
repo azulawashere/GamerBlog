@@ -30,7 +30,7 @@ namespace Project.WinUI
                 MessageBox.Show("Şifreler uyuşmuyor", "TAKE(1)GameBlog");
                 return;
             }
-            if (txtIsim.Text !=string.Empty && txtSoyisim.Text !=string.Empty && txtKullaniciAdi.Text!=string.Empty && txtSifre.Text!=string.Empty && txtEmail.Text!=string.Empty && txtSifre.Text.Length<=8)// kullanıcının bilgilerini bos bırakmamasını ve sifrenin en az 8 karakter icermesini sagladık...
+            if (txtIsim.Text !=string.Empty && txtSoyisim.Text !=string.Empty && txtKullaniciAdi.Text!=string.Empty && txtSifre.Text!=string.Empty && txtEmail.Text!=string.Empty && txtSifre.Text.Length>8)// kullanıcının bilgilerini bos bırakmamasını ve sifrenin en az 8 karakter icermesini sagladık...
             {
                 AppUserProfile ap = new AppUserProfile()
                 {

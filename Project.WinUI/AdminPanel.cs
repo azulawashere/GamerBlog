@@ -29,7 +29,7 @@ namespace Project.WinUI
             lstUyeler.DataSource = _appUserRepository.GetActives();
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();
-            lstYorumlar.DataSource = _commentRepository.GetActives();
+            lstYorumlar.DataSource = user.Comments;           
             this.user = user;
             
 
@@ -68,7 +68,7 @@ namespace Project.WinUI
             }
             else
             {
-                MessageBox.Show("Kategori girilmedi");
+                MessageBox.Show("Kategori girilmedi", "TAKE(1)GameBlog");
             }
         }
 
@@ -78,31 +78,42 @@ namespace Project.WinUI
             {
                 _appUserRepository.Delete(lstUyeler.SelectedItem as AppUser);
                 lstUyeler.DataSource = _appUserRepository.GetActives();
-
+                MessageBox.Show("Silme işlemi başarılı", "TAKE(1)GameBlog");
 
             }
             else
             {
-                MessageBox.Show("Lütfen işlem yapılcak üye seçiniz");
+                MessageBox.Show("Lütfen işlem yapılcak üye seçiniz", "TAKE(1)GameBlog");
             }
         }
 
         private void btnYorumSil_Click(object sender, EventArgs e)
-        {
-            if (cmbKullanicilar.SelectedIndex>-1)
+        {                                               
+            if (lstYorumlar.SelectedIndex>-1)
             {
-                lstYorumlar.DataSource=(cmbKullanicilar.SelectedItem as AppUser).Comments;
-              
-                if (lstYorumlar.SelectedIndex>-1)
-                {
-                    _commentRepository.Delete(lstYorumlar.SelectedItem as Comment);
-                }
-
+               _commentRepository.Delete(lstYorumlar.SelectedItem as Comment);
+                MessageBox.Show("Silme işlemi başarılı", "TAKE(1)GameBlog");
             }
             else
             {
-                MessageBox.Show("Lütfen kullanıcı seçiniz");
+                MessageBox.Show("Lütfen yorum seçiniz", "TAKE(1)GameBlog");
             }
+            
+         
+        }
+
+        private void btnAnaSayfa_Click(object sender, EventArgs e)
+        {
+            MainPage mg = new MainPage(user); //Basildiginda form1 formuna gecis yapsın ve kendini kapatsın...
+            mg.Show();
+            this.Hide();
+        }
+
+        private void cmbKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as AppUser).Comments;
+            lstYorumlar.DataSource = (cmbKullanicilar.SelectedItem as AppUsersRepository).GetActives().;
         }
     }
 }
