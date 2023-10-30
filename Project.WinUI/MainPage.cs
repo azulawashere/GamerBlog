@@ -113,5 +113,22 @@ namespace Project.WinUI
             else MessageBox.Show("Yorum yapmak için Oyun seçiniz");
 
         }
+
+        private void btnYorumYap_Click(object sender, EventArgs e)
+        {
+            if (txtYorum.Text!=null&& txtTitle.Text!=null&&cmbKategori.SelectedIndex>-1)
+            {
+                Comment comment = new Comment
+                {
+                    Title = txtTitle.Text,
+                    Description = txtYorum.Text,
+                   
+                };
+                _commentRepository.Add(comment);
+            }
+           
+        }
+
+     
     }
 }
