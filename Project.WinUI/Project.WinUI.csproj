@@ -108,6 +108,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -137,6 +138,21 @@
       <Project>{2a66b018-591f-4044-b895-f8272f133640}</Project>
       <Name>Project.ENTITES</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90cd46ae29323a1f31d55900c3a2436d.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ronaldo-nazario-real-madrid_uowrhe3shq301vp41b5ha5ct4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\swbfii-credit-ea%402000x1270.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darth-vader-sith-star-wars-dark-wallpaper-preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-magnifying-glass-magnifying-glass-material-glass-wine-glass-lens.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
