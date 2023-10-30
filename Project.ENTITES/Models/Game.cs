@@ -14,7 +14,11 @@ namespace Project.ENTITES.Models
         //Relational Properties
         public virtual Category Category { get; set; }
         public virtual List<Comment>  Comments { get; set; }
-        
+        public override string ToString()
+        {
+            return $"{Name}";
+        }
+
 
     }
 }

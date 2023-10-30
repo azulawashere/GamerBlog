@@ -17,19 +17,22 @@ namespace Project.WinUI
         AppUser User;
         AppUsersRepository _appUsersRepository;
         CommentRepository _commentRepository;
+        GameRepository _gameRepository;
 
         public MainPage(AppUser user)
         {
+            _gameRepository = new GameRepository();
            _appUsersRepository = new AppUsersRepository();
             _commentRepository = new CommentRepository();
             InitializeComponent();
             User = user;
             lblUserName.Text = User.UserName;
             lblStatu.Text = StatuYazdır();
+           cmbKategori.DataSource= _gameRepository.GetActives();
+
            
         }
-        string[] veriler = { "Battlefront3", "csgo", "Fifa24" };
-        string[] begenilenOyun = { "Battlefront3", "Fifa24" };
+       
         
         public string StatuYazdır()
         {
@@ -37,8 +40,7 @@ namespace Project.WinUI
         }
         private void MainPage_Load(object sender, EventArgs e)
         {
-            cmbKategori.Items.AddRange(veriler);
-            cmbBegenilenOyunlar.Items.AddRange(begenilenOyun);
+          
 
         }
         private void cmbKategori_SelectedIndexChanged(object sender, EventArgs e)
@@ -46,14 +48,14 @@ namespace Project.WinUI
             pctFoto.Visible = false;
             if (cmbKategori.SelectedItem as string == "Battlefront3")
             {
-                if (cmbKategori.SelectedItem == veriler)
-                {
-                    pctFoto.Visible = false;
-                }
-                else
-                {
-                    pctFoto.Visible = true;
-                }
+                //if (cmbKategori.SelectedItem == veriler) // bura hata veriyor
+                //{
+                //    pctFoto.Visible = false;
+                //}
+                //else
+                //{
+                //    pctFoto.Visible = true;
+                //}
             }
 
         }
@@ -122,11 +124,15 @@ namespace Project.WinUI
                 {
                     Title = txtTitle.Text,
                     Description = txtYorum.Text,
-                   
+                    Game=cmbKategori.SelectedItem as Game ,
+                    AppUser= User
+                    
                 };
                 _commentRepository.Add(comment);
+                MessageBox.Show("Başarılı");
             }
-           
+            else MessageBox.Show("başarısız");
+
         }
 
      
