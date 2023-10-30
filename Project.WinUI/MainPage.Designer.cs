@@ -45,18 +45,20 @@
             // cmbBegenilenOyun
             // 
             this.cmbBegenilenOyun.FormattingEnabled = true;
-            this.cmbBegenilenOyun.Location = new System.Drawing.Point(217, 381);
+            this.cmbBegenilenOyun.Location = new System.Drawing.Point(602, 428);
+            this.cmbBegenilenOyun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBegenilenOyun.Name = "cmbBegenilenOyun";
-            this.cmbBegenilenOyun.Size = new System.Drawing.Size(121, 21);
+            this.cmbBegenilenOyun.Size = new System.Drawing.Size(160, 24);
             this.cmbBegenilenOyun.TabIndex = 15;
             // 
             // lblTercihEdilenOyun
             // 
             this.lblTercihEdilenOyun.AutoSize = true;
             this.lblTercihEdilenOyun.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTercihEdilenOyun.Location = new System.Drawing.Point(165, 332);
+            this.lblTercihEdilenOyun.Location = new System.Drawing.Point(442, 311);
+            this.lblTercihEdilenOyun.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTercihEdilenOyun.Name = "lblTercihEdilenOyun";
-            this.lblTercihEdilenOyun.Size = new System.Drawing.Size(258, 24);
+            this.lblTercihEdilenOyun.Size = new System.Drawing.Size(320, 29);
             this.lblTercihEdilenOyun.TabIndex = 14;
             this.lblTercihEdilenOyun.Text = "En Çok Beğenilen Oyunlar";
             // 
@@ -64,26 +66,29 @@
             // 
             this.lblKategori.AutoSize = true;
             this.lblKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblKategori.Location = new System.Drawing.Point(-84, 332);
+            this.lblKategori.Location = new System.Drawing.Point(13, 311);
+            this.lblKategori.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblKategori.Name = "lblKategori";
-            this.lblKategori.Size = new System.Drawing.Size(172, 24);
+            this.lblKategori.Size = new System.Drawing.Size(217, 29);
             this.lblKategori.TabIndex = 13;
             this.lblKategori.Text = "Oyun Kategorileri";
             // 
             // cmbKategori
             // 
             this.cmbKategori.FormattingEnabled = true;
-            this.cmbKategori.Location = new System.Drawing.Point(-65, 381);
+            this.cmbKategori.Location = new System.Drawing.Point(108, 368);
+            this.cmbKategori.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbKategori.Name = "cmbKategori";
-            this.cmbKategori.Size = new System.Drawing.Size(121, 21);
+            this.cmbKategori.Size = new System.Drawing.Size(160, 24);
             this.cmbKategori.TabIndex = 12;
             // 
             // txtAra
             // 
-            this.txtAra.Location = new System.Drawing.Point(190, 277);
+            this.txtAra.Location = new System.Drawing.Point(195, 187);
+            this.txtAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtAra.Multiline = true;
             this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(919, 30);
+            this.txtAra.Size = new System.Drawing.Size(1224, 36);
             this.txtAra.TabIndex = 11;
             // 
             // lblBaslik
@@ -91,42 +96,47 @@
             this.lblBaslik.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.lblBaslik.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblBaslik.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblBaslik.Location = new System.Drawing.Point(-40, 214);
+            this.lblBaslik.Location = new System.Drawing.Point(394, 68);
+            this.lblBaslik.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(299, 45);
+            this.lblBaslik.Size = new System.Drawing.Size(399, 55);
             this.lblBaslik.TabIndex = 10;
             this.lblBaslik.Text = "TakeBirGaming";
             // 
             // cmbBegenilenEdilenOyun
             // 
             this.cmbBegenilenEdilenOyun.FormattingEnabled = true;
-            this.cmbBegenilenEdilenOyun.Location = new System.Drawing.Point(217, 348);
+            this.cmbBegenilenEdilenOyun.Location = new System.Drawing.Point(350, 344);
+            this.cmbBegenilenEdilenOyun.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBegenilenEdilenOyun.Name = "cmbBegenilenEdilenOyun";
-            this.cmbBegenilenEdilenOyun.Size = new System.Drawing.Size(121, 21);
+            this.cmbBegenilenEdilenOyun.Size = new System.Drawing.Size(160, 24);
             this.cmbBegenilenEdilenOyun.TabIndex = 16;
             // 
             // cmbBegenilenOyunlar
             // 
             this.cmbBegenilenOyunlar.FormattingEnabled = true;
-            this.cmbBegenilenOyunlar.Location = new System.Drawing.Point(217, 348);
+            this.cmbBegenilenOyunlar.Location = new System.Drawing.Point(350, 376);
+            this.cmbBegenilenOyunlar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbBegenilenOyunlar.Name = "cmbBegenilenOyunlar";
-            this.cmbBegenilenOyunlar.Size = new System.Drawing.Size(121, 21);
+            this.cmbBegenilenOyunlar.Size = new System.Drawing.Size(160, 24);
             this.cmbBegenilenOyunlar.TabIndex = 17;
             // 
             // btnKayitOl
             // 
-            this.btnKayitOl.Location = new System.Drawing.Point(1490, 217);
+            this.btnKayitOl.Location = new System.Drawing.Point(1987, 267);
+            this.btnKayitOl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKayitOl.Name = "btnKayitOl";
-            this.btnKayitOl.Size = new System.Drawing.Size(75, 23);
+            this.btnKayitOl.Size = new System.Drawing.Size(100, 28);
             this.btnKayitOl.TabIndex = 19;
             this.btnKayitOl.Text = "Kayıt Ol";
             this.btnKayitOl.UseVisualStyleBackColor = true;
             // 
             // btnKullanici
             // 
-            this.btnKullanici.Location = new System.Drawing.Point(1402, 217);
+            this.btnKullanici.Location = new System.Drawing.Point(1869, 267);
+            this.btnKullanici.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnKullanici.Name = "btnKullanici";
-            this.btnKullanici.Size = new System.Drawing.Size(82, 23);
+            this.btnKullanici.Size = new System.Drawing.Size(109, 28);
             this.btnKullanici.TabIndex = 18;
             this.btnKullanici.Text = "Kullanıcı Giriş";
             this.btnKullanici.UseVisualStyleBackColor = true;
@@ -134,26 +144,28 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(-7, 448);
+            this.label2.Location = new System.Drawing.Point(-9, 551);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(44, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "label2";
             // 
             // btnAra
             // 
             this.btnAra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAra.Location = new System.Drawing.Point(1110, 277);
+            this.btnAra.Location = new System.Drawing.Point(1480, 341);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(56, 30);
+            this.btnAra.Size = new System.Drawing.Size(75, 37);
             this.btnAra.TabIndex = 21;
             this.btnAra.UseVisualStyleBackColor = true;
             // 
             // MainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1481, 675);
+            this.ClientSize = new System.Drawing.Size(1924, 831);
             this.Controls.Add(this.cmbBegenilenOyun);
             this.Controls.Add(this.lblTercihEdilenOyun);
             this.Controls.Add(this.lblKategori);
@@ -166,6 +178,7 @@
             this.Controls.Add(this.btnKullanici);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnAra);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.ResumeLayout(false);
