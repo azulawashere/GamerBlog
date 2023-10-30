@@ -45,14 +45,16 @@
             this.cmbKategoriler = new System.Windows.Forms.ComboBox();
             this.btnYorumSil = new System.Windows.Forms.Button();
             this.btnAnaSayfa = new System.Windows.Forms.Button();
+            this.btnYorumGetir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 84);
+            this.label1.Location = new System.Drawing.Point(9, 68);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 36);
+            this.label1.Size = new System.Drawing.Size(80, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Oyun Adı:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -60,25 +62,28 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(237, -1);
+            this.label2.Location = new System.Drawing.Point(178, -1);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(724, 79);
+            this.label2.Size = new System.Drawing.Size(543, 64);
             this.label2.TabIndex = 0;
             this.label2.Text = "Take(1) Admin Paneli";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtOyunIsmi
             // 
-            this.txtOyunIsmi.Location = new System.Drawing.Point(113, 93);
+            this.txtOyunIsmi.Location = new System.Drawing.Point(85, 76);
+            this.txtOyunIsmi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtOyunIsmi.Name = "txtOyunIsmi";
-            this.txtOyunIsmi.Size = new System.Drawing.Size(155, 22);
+            this.txtOyunIsmi.Size = new System.Drawing.Size(117, 20);
             this.txtOyunIsmi.TabIndex = 1;
             // 
             // btnOyunEkle
             // 
-            this.btnOyunEkle.Location = new System.Drawing.Point(140, 121);
+            this.btnOyunEkle.Location = new System.Drawing.Point(105, 98);
+            this.btnOyunEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnOyunEkle.Name = "btnOyunEkle";
-            this.btnOyunEkle.Size = new System.Drawing.Size(100, 30);
+            this.btnOyunEkle.Size = new System.Drawing.Size(75, 24);
             this.btnOyunEkle.TabIndex = 2;
             this.btnOyunEkle.Text = "Oyun Ekle";
             this.btnOyunEkle.UseVisualStyleBackColor = true;
@@ -87,9 +92,10 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(2, 313);
+            this.label3.Location = new System.Drawing.Point(2, 254);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 36);
+            this.label3.Size = new System.Drawing.Size(106, 29);
             this.label3.TabIndex = 0;
             this.label3.Text = "Üye İşlemleri:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -97,18 +103,20 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(676, 100);
+            this.label4.Location = new System.Drawing.Point(481, 70);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(174, 33);
+            this.label4.Size = new System.Drawing.Size(130, 27);
             this.label4.TabIndex = 0;
             this.label4.Text = "Yorum İşlemleri:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnUyeSil
             // 
-            this.btnUyeSil.Location = new System.Drawing.Point(244, 448);
+            this.btnUyeSil.Location = new System.Drawing.Point(183, 364);
+            this.btnUyeSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnUyeSil.Name = "btnUyeSil";
-            this.btnUyeSil.Size = new System.Drawing.Size(131, 33);
+            this.btnUyeSil.Size = new System.Drawing.Size(98, 27);
             this.btnUyeSil.TabIndex = 4;
             this.btnUyeSil.Text = "Üye Sil";
             this.btnUyeSil.UseVisualStyleBackColor = true;
@@ -117,36 +125,39 @@
             // cmbKullanicilar
             // 
             this.cmbKullanicilar.FormattingEnabled = true;
-            this.cmbKullanicilar.Location = new System.Drawing.Point(855, 107);
+            this.cmbKullanicilar.Location = new System.Drawing.Point(615, 76);
+            this.cmbKullanicilar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbKullanicilar.Name = "cmbKullanicilar";
-            this.cmbKullanicilar.Size = new System.Drawing.Size(224, 24);
+            this.cmbKullanicilar.Size = new System.Drawing.Size(169, 21);
             this.cmbKullanicilar.TabIndex = 5;
-            this.cmbKullanicilar.SelectedIndexChanged += new System.EventHandler(this.cmbKullanicilar_SelectedIndexChanged);
+           
             // 
             // lstYorumlar
             // 
             this.lstYorumlar.FormattingEnabled = true;
-            this.lstYorumlar.ItemHeight = 16;
-            this.lstYorumlar.Location = new System.Drawing.Point(694, 147);
+            this.lstYorumlar.Location = new System.Drawing.Point(520, 119);
+            this.lstYorumlar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstYorumlar.Name = "lstYorumlar";
-            this.lstYorumlar.Size = new System.Drawing.Size(487, 260);
+            this.lstYorumlar.Size = new System.Drawing.Size(366, 212);
             this.lstYorumlar.TabIndex = 6;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(2, 223);
+            this.label5.Location = new System.Drawing.Point(2, 181);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 36);
+            this.label5.Size = new System.Drawing.Size(106, 29);
             this.label5.TabIndex = 0;
             this.label5.Text = "Kategori Ekle:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnKategoriEkle
             // 
-            this.btnKategoriEkle.Location = new System.Drawing.Point(167, 260);
+            this.btnKategoriEkle.Location = new System.Drawing.Point(125, 211);
+            this.btnKategoriEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnKategoriEkle.Name = "btnKategoriEkle";
-            this.btnKategoriEkle.Size = new System.Drawing.Size(117, 28);
+            this.btnKategoriEkle.Size = new System.Drawing.Size(88, 23);
             this.btnKategoriEkle.TabIndex = 8;
             this.btnKategoriEkle.Text = "Kategori Ekle";
             this.btnKategoriEkle.UseVisualStyleBackColor = true;
@@ -155,25 +166,27 @@
             // lstUyeler
             // 
             this.lstUyeler.FormattingEnabled = true;
-            this.lstUyeler.ItemHeight = 16;
-            this.lstUyeler.Location = new System.Drawing.Point(140, 313);
+            this.lstUyeler.Location = new System.Drawing.Point(105, 254);
+            this.lstUyeler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lstUyeler.Name = "lstUyeler";
-            this.lstUyeler.Size = new System.Drawing.Size(338, 116);
+            this.lstUyeler.Size = new System.Drawing.Size(254, 95);
             this.lstUyeler.TabIndex = 9;
             // 
             // txtKategoriEkle
             // 
-            this.txtKategoriEkle.Location = new System.Drawing.Point(147, 232);
+            this.txtKategoriEkle.Location = new System.Drawing.Point(110, 188);
+            this.txtKategoriEkle.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtKategoriEkle.Name = "txtKategoriEkle";
-            this.txtKategoriEkle.Size = new System.Drawing.Size(155, 22);
+            this.txtKategoriEkle.Size = new System.Drawing.Size(117, 20);
             this.txtKategoriEkle.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(12, 167);
+            this.label6.Location = new System.Drawing.Point(9, 136);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(142, 36);
+            this.label6.Size = new System.Drawing.Size(106, 29);
             this.label6.TabIndex = 10;
             this.label6.Text = "Kategori Seç:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -181,16 +194,18 @@
             // cmbKategoriler
             // 
             this.cmbKategoriler.FormattingEnabled = true;
-            this.cmbKategoriler.Location = new System.Drawing.Point(147, 176);
+            this.cmbKategoriler.Location = new System.Drawing.Point(110, 143);
+            this.cmbKategoriler.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbKategoriler.Name = "cmbKategoriler";
-            this.cmbKategoriler.Size = new System.Drawing.Size(121, 24);
+            this.cmbKategoriler.Size = new System.Drawing.Size(92, 21);
             this.cmbKategoriler.TabIndex = 13;
             // 
             // btnYorumSil
             // 
-            this.btnYorumSil.Location = new System.Drawing.Point(884, 413);
+            this.btnYorumSil.Location = new System.Drawing.Point(663, 336);
+            this.btnYorumSil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnYorumSil.Name = "btnYorumSil";
-            this.btnYorumSil.Size = new System.Drawing.Size(118, 41);
+            this.btnYorumSil.Size = new System.Drawing.Size(88, 33);
             this.btnYorumSil.TabIndex = 14;
             this.btnYorumSil.Text = "Yorum Sil";
             this.btnYorumSil.UseVisualStyleBackColor = true;
@@ -198,19 +213,31 @@
             // 
             // btnAnaSayfa
             // 
-            this.btnAnaSayfa.Location = new System.Drawing.Point(1105, 489);
+            this.btnAnaSayfa.Location = new System.Drawing.Point(829, 397);
+            this.btnAnaSayfa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnaSayfa.Name = "btnAnaSayfa";
-            this.btnAnaSayfa.Size = new System.Drawing.Size(115, 46);
+            this.btnAnaSayfa.Size = new System.Drawing.Size(86, 37);
             this.btnAnaSayfa.TabIndex = 15;
             this.btnAnaSayfa.Text = "Ana Sayfa";
             this.btnAnaSayfa.UseVisualStyleBackColor = true;
             this.btnAnaSayfa.Click += new System.EventHandler(this.btnAnaSayfa_Click);
             // 
+            // btnYorumGetir
+            // 
+            this.btnYorumGetir.Location = new System.Drawing.Point(789, 76);
+            this.btnYorumGetir.Name = "btnYorumGetir";
+            this.btnYorumGetir.Size = new System.Drawing.Size(97, 23);
+            this.btnYorumGetir.TabIndex = 16;
+            this.btnYorumGetir.Text = "Yorumları Getir";
+            this.btnYorumGetir.UseVisualStyleBackColor = true;
+            this.btnYorumGetir.Click += new System.EventHandler(this.btnYorumGetir_Click);
+            // 
             // AdminPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1223, 536);
+            this.ClientSize = new System.Drawing.Size(917, 436);
+            this.Controls.Add(this.btnYorumGetir);
             this.Controls.Add(this.btnAnaSayfa);
             this.Controls.Add(this.btnYorumSil);
             this.Controls.Add(this.cmbKategoriler);
@@ -228,8 +255,10 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminPanel";
             this.Text = "AdminPanel";
+       
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,5 +283,6 @@
         private System.Windows.Forms.ComboBox cmbKategoriler;
         private System.Windows.Forms.Button btnYorumSil;
         private System.Windows.Forms.Button btnAnaSayfa;
+        private System.Windows.Forms.Button btnYorumGetir;
     }
 }

@@ -31,8 +31,8 @@ namespace Project.WinUI
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();
             cmbKullanicilar.SelectedIndex = -1;
-           
-            
+
+
 
 
         }
@@ -111,23 +111,22 @@ namespace Project.WinUI
             this.Hide();
         }
 
-        private void cmbKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
+       
+
+        
+
+        private void btnYorumGetir_Click(object sender, EventArgs e)
         {
-            
 
             if (cmbKullanicilar.SelectedIndex > -1)
             {
-              lstYorumlar.DataSource=  _commentRepository.Where(x=>(x.Status!=ENTITES.Enums.DataStatus.Deleted&&x.AppUserID==User.ID ));
+                lstYorumlar.DataSource = _commentRepository.Where(x => (x.Status != ENTITES.Enums.DataStatus.Deleted && x.AppUserID == (cmbKullanicilar.SelectedItem as AppUser).ID));
 
             }
             else
             {
                 MessageBox.Show("Lütfen kullanıcı seç");
             }
-            
-            
-            
-            
 
         }
     }
