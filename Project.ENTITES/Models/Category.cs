@@ -10,7 +10,10 @@ namespace Project.ENTITES.Models
     {
         public string CategoryName { get; set; }
 
-
+        public override string ToString()
+        {
+            return $"{CategoryName}";
+        }
         //Relational Properties
         public virtual  List<Game> Games { get; set; }
 
