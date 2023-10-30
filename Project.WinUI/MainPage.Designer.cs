@@ -226,7 +226,7 @@
             // 
             // btnYorumYap
             // 
-            this.btnYorumYap.Location = new System.Drawing.Point(95, 335);
+            this.btnYorumYap.Location = new System.Drawing.Point(95, 316);
             this.btnYorumYap.Name = "btnYorumYap";
             this.btnYorumYap.Size = new System.Drawing.Size(120, 33);
             this.btnYorumYap.TabIndex = 34;
@@ -279,7 +279,7 @@
             // 
             this.txtTitle.Location = new System.Drawing.Point(50, 38);
             this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(100, 20);
+            this.txtTitle.Size = new System.Drawing.Size(165, 20);
             this.txtTitle.TabIndex = 35;
             // 
             // button2

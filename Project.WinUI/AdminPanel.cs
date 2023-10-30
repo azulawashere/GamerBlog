@@ -18,8 +18,8 @@ namespace Project.WinUI
         GameRepository _gameRepository;
         AppUsersRepository _appUserRepository;
         CategoryRepository _categoryRepository;
-
-        public AdminPanel()
+        AppUser user;
+        public AdminPanel(AppUser user)
         {
             InitializeComponent();
             _commentRepository = new CommentRepository();
@@ -29,6 +29,8 @@ namespace Project.WinUI
             lstUyeler.DataSource = _appUserRepository.GetActives();
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
             cmbKullanicilar.DataSource = _appUserRepository.GetAll();
+            lstYorumlar.DataSource = _commentRepository.GetActives();
+            this.user = user;
             
 
         }

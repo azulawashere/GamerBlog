@@ -10,7 +10,7 @@ namespace Project.ENTITES.Models
     {
         public Comment()
         {
-            List<Comment> list = new List<Comment>();
+            Comments = new List<Comment>();
         }
         public string Description { get; set; }
         public int AppUserID { get; set; }
@@ -21,6 +21,7 @@ namespace Project.ENTITES.Models
         public virtual Game Game { get; set; }    
         public  virtual List<Like> Likes{ get; set; }
         public virtual List<Disslike> Disslikes { get; set; }
+        public virtual AppUser AppUser { get; set; }
       
 
     }

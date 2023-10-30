@@ -34,16 +34,24 @@ namespace Project.WinUI
         {
             try // program çökmesin diye giriş yapma işlemlerini trycathe aldık
             {
-                if (txtKullaniciAdi.Text != string.Empty && txtSifre.Text != string.Empty && txtSifre.Text.Length>7) // giriş yapma textboxları null geçilmemesi için kontrol
+                if (txtKullaniciAdi.Text != string.Empty && txtSifre.Text != string.Empty && txtSifre.Text.Length>3) // giriş yapma textboxları null geçilmemesi için kontrol
                 {
                     
                     AppUser user = _appUserRepository.FirstOrDefault(x => x.UserName == txtKullaniciAdi.Text.ToLower() && x.Password == txtSifre.Text); //kutulardaki verilere uyan bir kullanıcı var ise dbize kullanıcıyı döncek yok ise null döncek sorgu. şifre tolower değil güvenlik amaçlı
 
-                    if (user != null) // eğer bide firsordefault metodundan null değer dönmezse alttaki kodlar çalışsın
+                    if (user != null && user.Admin==false) // eğer bide firsordefault metodundan null değer dönmezse alttaki kodlar çalışsın
                     {
                         MessageBox.Show("Giriş Başarili");
                         MainPage mp = new MainPage(user); // blog paneline gitmek için bir nesne yaratıyoruz
                         mp.Show();
+                        Hide();
+                    }
+                    else if(user != null && user.Admin)
+                    {
+
+                        MessageBox.Show("Giriş Başarili");
+                        AdminPanel ap = new AdminPanel(user); // blog paneline gitmek için bir nesne yaratıyoruz
+                        ap.Show();
                         Hide();
                     }
                     else MessageBox.Show("Girdiğiniz Bilgileri kontrol ediniz.");
