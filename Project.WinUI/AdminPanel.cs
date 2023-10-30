@@ -29,7 +29,8 @@ namespace Project.WinUI
             _categoryRepository = new CategoryRepository();
             lstUyeler.DataSource = _appUserRepository.GetActives();
             cmbKategoriler.DataSource = _categoryRepository.GetAll();           
-            cmbKullanicilar.DataSource = _appUserRepository.GetAll();                    
+            cmbKullanicilar.DataSource = _appUserRepository.GetAll();
+            cmbKullanicilar.SelectedIndex = -1;
            
             
 
