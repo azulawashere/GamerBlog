@@ -47,9 +47,13 @@ namespace Project.WinUI
             List<Comment> copComments = _commentRepository.GetActives().OrderByDescending(x => x.Likes.Count).Take(3).ToList();
 
             AltIkiYorumGoster();
-            lblComment1.Text = YorumIcerikGetir(copComments[0]);
+            lblComment1.Text= YorumIcerikGetir(copComments[0]);
+            lblComment1.Tag= copComments[0];
             lblComment2.Text = YorumIcerikGetir(copComments[1]);
+            lblComment2.Tag = copComments[1];
             lblComment3.Text = YorumIcerikGetir(copComments[2]);
+            lblComment3.Tag = copComments[2];
+
 
         }
 
@@ -144,8 +148,9 @@ namespace Project.WinUI
             MainPage_Load(sender,e);
         }
 
-     
-
-       
+        private void btnLike1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
