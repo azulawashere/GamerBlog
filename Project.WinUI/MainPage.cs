@@ -19,6 +19,8 @@ namespace Project.WinUI
         AppUsersRepository _appUsersRepository;
         CommentRepository _commentRepository;
         GameRepository _gameRepository;
+     
+   
 
         public MainPage(AppUser user)
         {
@@ -141,5 +143,9 @@ namespace Project.WinUI
         {
             MainPage_Load(sender,e);
         }
+
+     
+
+       
     }
 }
