@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
-            this.btnKayitOl = new System.Windows.Forms.Button();
-            this.btnKullanici = new System.Windows.Forms.Button();
             this.pctFoto = new System.Windows.Forms.PictureBox();
             this.cmbBegenilenOyunlar = new System.Windows.Forms.ComboBox();
             this.lblBaslik = new System.Windows.Forms.Label();
@@ -57,24 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btnKayitOl
-            // 
-            this.btnKayitOl.Location = new System.Drawing.Point(1490, 217);
-            this.btnKayitOl.Name = "btnKayitOl";
-            this.btnKayitOl.Size = new System.Drawing.Size(75, 23);
-            this.btnKayitOl.TabIndex = 19;
-            this.btnKayitOl.Text = "Kayıt Ol";
-            this.btnKayitOl.UseVisualStyleBackColor = true;
-            // 
-            // btnKullanici
-            // 
-            this.btnKullanici.Location = new System.Drawing.Point(1402, 217);
-            this.btnKullanici.Name = "btnKullanici";
-            this.btnKullanici.Size = new System.Drawing.Size(82, 23);
-            this.btnKullanici.TabIndex = 18;
-            this.btnKullanici.Text = "Kullanıcı Giriş";
-            this.btnKullanici.UseVisualStyleBackColor = true;
             // 
             // pctFoto
             // 
@@ -317,8 +297,6 @@
             this.Controls.Add(this.cmbKategori);
             this.Controls.Add(this.btnAra);
             this.Controls.Add(this.txtAra);
-            this.Controls.Add(this.btnKayitOl);
-            this.Controls.Add(this.btnKullanici);
             this.Name = "MainPage";
             this.Text = "MainPage";
             this.Load += new System.EventHandler(this.MainPage_Load);
@@ -332,8 +310,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnKayitOl;
-        private System.Windows.Forms.Button btnKullanici;
         private System.Windows.Forms.PictureBox pctFoto;
         private System.Windows.Forms.ComboBox cmbBegenilenOyunlar;
         private System.Windows.Forms.Label lblBaslik;
