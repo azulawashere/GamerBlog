@@ -20,6 +20,7 @@ namespace Project.BLL.DesignPatterns.SingletonPattern
             {
                 if(_dbInstance == null) _dbInstance = new MyContext();
                 return _dbInstance;
+                
             }
         }
         

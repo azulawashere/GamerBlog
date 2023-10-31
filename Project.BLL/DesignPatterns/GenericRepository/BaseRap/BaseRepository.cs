@@ -134,5 +134,10 @@ namespace Project.BLL.DesignPatterns.GenericRepository.BaseRap
         {
            return _db.Set<T>().Where(exp).ToList();
         }
+
+        public IQueryable<T> Take(int number)
+        {
+            return  _db.Set<T>().Take(number);
+        }
     }
 }

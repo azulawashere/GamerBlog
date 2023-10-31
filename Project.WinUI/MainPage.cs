@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Navigation;
 
 namespace Project.WinUI
 {
@@ -22,64 +23,42 @@ namespace Project.WinUI
         public MainPage(AppUser user)
         {
             _gameRepository = new GameRepository();
-           _appUsersRepository = new AppUsersRepository();
+            _appUsersRepository = new AppUsersRepository();
             _commentRepository = new CommentRepository();
             InitializeComponent();
             User = user;
             lblUserName.Text = User.UserName;
             lblStatu.Text = StatuYazdır();
-           cmbKategori.DataSource= _gameRepository.GetActives();
+            cmbKategori.DataSource = _gameRepository.GetActives();
 
-           
+
         }
-       
-        
+
+
         public string StatuYazdır()
         {
             return $"Kullanıcı Sayısı:{_appUsersRepository.GetActives().Count} \n Yorum Sayısı:{_commentRepository.GetActives().Count} \n {DateTime.Now}";
         }
+
         private void MainPage_Load(object sender, EventArgs e)
         {
-          
+            List<Comment> copComments = _commentRepository.GetActives().OrderByDescending(x => x.Likes.Count).Take(3).ToList();
+
+            AltIkiYorumGoster();
+            lblComment1.Text = YorumIcerikGetir(copComments[0]);
+            lblComment2.Text = YorumIcerikGetir(copComments[1]);
+            lblComment3.Text = YorumIcerikGetir(copComments[2]);
 
         }
-        private void cmbKategori_SelectedIndexChanged(object sender, EventArgs e)
+
+        private string  YorumIcerikGetir(Comment comment)
         {
-            pctFoto.Visible = false;
-            if (cmbKategori.SelectedItem as string == "Battlefront3")
-            {
-                //if (cmbKategori.SelectedItem == veriler) // bura hata veriyor
-                //{
-                //    pctFoto.Visible = false;
-                //}
-                //else
-                //{
-                //    pctFoto.Visible = true;
-                //}
-            }
-
+            return $"Oyun:{comment.Game.Name} \n Başlık:{comment.Title}\n Yorum:{comment.Description} \n Beğeni Sayısı: {comment.Likes.Count}  ";
         }
 
-        private void cmbBegenilenOyunlar_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbBegenilenOyunlar.SelectedItem as string == "Battlefront3")
-            {
-                this.BackgroundImage = Properties.Resources._90cd46ae29323a1f31d55900c3a2436d;
+       
 
-
-            }
-            else if (cmbBegenilenOyunlar.SelectedItem as string == "Fifa24")
-            {
-                this.BackgroundImage = Properties.Resources.ronaldo_nazario_real_madrid_uowrhe3shq301vp41b5ha5ct4;
-
-            }
-            else
-            {
-                this.BackgroundImage = Properties.Resources.darth_vader_sith_star_wars_dark_wallpaper_preview;
-            }
-            pctFoto.Visible = false;
-
-        }
+       
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -101,10 +80,6 @@ namespace Project.WinUI
             }
         }
 
-        private void lblUserName_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -135,6 +110,36 @@ namespace Project.WinUI
 
         }
 
-     
+        private void btnAra_Click(object sender, EventArgs e)
+        {
+
+           Comment c= _commentRepository.GetActives().Where(x => x.Title.Contains(txtAra.Text)).FirstOrDefault();
+            if (c!=null)
+            {
+                AltIkiYorumGizle();
+              lblComment1.Text=  YorumIcerikGetir(c);
+
+            }
+
+        }
+        
+        private void AltIkiYorumGoster()
+        {
+           
+            lblComment2.Visible = true;
+            lblComment3.Visible = true;
+        }
+        private void AltIkiYorumGizle()
+        {
+
+            lblComment2.Visible = false;
+            lblComment3.Visible = false;
+        }
+
+
+        private void btnSayfaYenile_Click(object sender, EventArgs e)
+        {
+            MainPage_Load(sender,e);
+        }
     }
 }

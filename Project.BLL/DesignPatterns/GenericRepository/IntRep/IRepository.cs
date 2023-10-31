@@ -34,6 +34,7 @@ namespace Project.BLL.DesignPatterns.GenericRepository.IntRep
         IQueryable<X> Select <X>(Expression<Func<T, X>> exp);
 
         T Find(int id);
+        IQueryable<T> Take(int number);
 
 
 
