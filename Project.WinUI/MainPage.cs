@@ -118,14 +118,18 @@ namespace Project.WinUI
 
         private void btnAra_Click(object sender, EventArgs e)
         {
-
-           Comment c= _commentRepository.GetActives().Where(x => x.Title.Contains(txtAra.Text)).FirstOrDefault();
-            if (c!=null)
+            if (txtAra.Text!=string.Empty)
             {
-                AltIkiYorumGizle();
-              lblComment1.Text=  YorumIcerikGetir(c);
+                Comment c = _commentRepository.GetActives().Where(x => x.Title.Contains(txtAra.Text)).FirstOrDefault();
+                if (c != null)
+                {
+                    AltIkiYorumGizle();
+                    lblComment1.Text = YorumIcerikGetir(c);
 
+                }
             }
+          
+          
 
         }
         
